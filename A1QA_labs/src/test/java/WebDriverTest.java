@@ -130,7 +130,7 @@ public class WebDriverTest {
         WebElement informationPriceList = driver.findElement(By.cssSelector("#result_0 > div:nth-child(2) > div:nth-child(2) > span:nth-child(1) > span:nth-child(2)"));
         String inf1 = informationNameList.getText();
         String inf2 = informationPriceList.getText().replaceAll("[^0-9,$,.]","");
-        System.out.println(String.format("Name and price on main list: %s, %s", inf1, inf2));
+        System.out.println(String.format("Name and price on main list : %s, %s", inf1, inf2));
         WebElement buttonFirstElementOnList = driver.findElement(By.id("result_0"));
         buttonFirstElementOnList.click();
         WebElement informationNameOnPage = driver.findElement(By.id("largeiteminfo_item_name"));
