@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BigStepJavaTest" duration-ms="35627" started-at="2021-12-14T00:57:37 MSK" finished-at="2021-12-14T00:58:13 MSK">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="35627" started-at="2021-12-14T00:57:37 MSK" finished-at="2021-12-14T00:58:13 MSK">
+      <class name="BigStepJavaTest">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="browserSetup" is-config="true" duration-ms="8837" started-at="2021-12-14T00:57:37 MSK" finished-at="2021-12-14T00:57:46 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="firstBigStapTest()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="firstBigStapTest" duration-ms="13515" started-at="2021-12-14T00:57:46 MSK" finished-at="2021-12-14T00:57:59 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstBigStapTest -->
+        <test-method status="PASS" signature="brClose()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="brClose" is-config="true" duration-ms="626" started-at="2021-12-14T00:57:59 MSK" finished-at="2021-12-14T00:58:00 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brClose -->
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="browserSetup" is-config="true" duration-ms="4765" started-at="2021-12-14T00:58:00 MSK" finished-at="2021-12-14T00:58:05 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="secondBigStapTest()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="secondBigStapTest" duration-ms="7253" started-at="2021-12-14T00:58:05 MSK" finished-at="2021-12-14T00:58:12 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondBigStapTest -->
+        <test-method status="PASS" signature="brClose()[pri:0, instance:BigStepJavaTest@1d16f93d]" name="brClose" is-config="true" duration-ms="603" started-at="2021-12-14T00:58:12 MSK" finished-at="2021-12-14T00:58:13 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brClose -->
+      </class> <!-- BigStepJavaTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- BigStepJavaTest -->
+</testng-results>
