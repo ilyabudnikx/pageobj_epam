@@ -27,9 +27,9 @@ public class BigStepJavaTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
-        driver = new FirefoxDriver();
-        Dimension d = new Dimension(1920, 1080);
-        driver.manage().window().setSize(d);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("window-size=1920,1080");
+        driver = new ChromeDriver(options);
 
         tradePage = new BigStepHomePage(driver)
                 .openPage()
