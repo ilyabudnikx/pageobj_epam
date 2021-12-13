@@ -33,6 +33,7 @@ public class BigStepJavaTest {
                 .enterEmail(eMail)
                 .enterPassword(pass)
                 .signIn();
+        System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     @Test
