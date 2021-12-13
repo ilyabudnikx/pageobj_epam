@@ -24,7 +24,7 @@ public class BigStepJavaTest {
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
+        options.addArguments("window-size=1920,1080");
         driver = new ChromeDriver(options);
 
         tradePage = new BigStepHomePage(driver)
