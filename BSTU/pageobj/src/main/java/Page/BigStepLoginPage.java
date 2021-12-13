@@ -30,9 +30,9 @@ public class BigStepLoginPage extends BasePage {
         return this;
     }
 
-    public BigStepPlatformPage signIn() {
+    public BigStapTradePage signIn() {
         waitForElementToBeClickable(driver, submitLogInButton);
         submitLogInButton.click();
-        return new BigStepPlatformPage(driver);
+        return new BigStapTradePage(driver);
     }
 }
