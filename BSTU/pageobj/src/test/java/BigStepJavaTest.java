@@ -3,7 +3,7 @@ import Page.BigStapTradePage;
 import Page.BigStepHomePage;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +22,7 @@ public class BigStepJavaTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
-        driver = new FirefoxDriver();
+        driver = new EdgeDriver();
         Dimension d = new Dimension(1920, 1080);
         driver.manage().window().setSize(d);
         tradePage = new BigStepHomePage(driver)
