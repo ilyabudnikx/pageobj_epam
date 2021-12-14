@@ -1,18 +1,13 @@
 import Page.BigStapSellersPage;
 import Page.BigStapTradePage;
-import org.openqa.selenium.Dimension;
+import Page.BigStepHomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import Page.BigStepHomePage;
 import org.testng.annotations.Test;
-
-
 public class BigStepJavaTest {
 
     private WebDriver driver;
@@ -27,11 +22,9 @@ public class BigStepJavaTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("window-size=1920,1080");
         driver = new ChromeDriver(options);
-
         tradePage = new BigStepHomePage(driver)
                 .openPage()
                 .openLoginWindow()
