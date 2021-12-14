@@ -22,7 +22,7 @@ public class BigStepJavaTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
-        System.setProperty("webdriver.chrome.driver", "BSTU/pageobj/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("window-size=1920,1080");
         driver = new ChromeDriver(options);
